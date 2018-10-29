@@ -126,7 +126,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   var prodString = testDynamicArray.join();
   var prods = 1;
   for(var i = 0; i < testDynamicArray.length; i++) {
-    prods *= testDynamicArray[i];
+    prods = multiply(prods, testDynamicArray[i])[0];
   }
   return [prods , 'The numbers ' + prodString + ' have a product of ' + prods + '.'];
 }
